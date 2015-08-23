@@ -10,11 +10,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-<!--     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />-->    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+    <!-- stylesheets -->
     <link href='http://fonts.googleapis.com/css?family=Jura:400,500,600,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,900,100,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
@@ -42,31 +38,28 @@
 <footer ng-include="'templates/footer.html'"></footer>
 
     
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
+    <!-- library -->
     <script src="lib/modernizr/modernizr.js"></script>
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
 
-    
-    <!-- build:js(.) scripts/plugins.js -->
-    
-    <!-- endbuild -->
-    
 
-    <!-- build:js scripts/main.js -->
-    
+  
+
+    <!-- app routes -->
     <script src="scripts/app.js"></script>
+    <!-- controllers -->
     <script src="scripts/controllers/homeCtrl.js"></script>
     <script src="scripts/controllers/aboutCtrl.js"></script>
     <script src="scripts/controllers/contactCtrl.js"></script>
     <script src="scripts/controllers/articlesCtrl.js"></script>
+    <!-- services -->
     <script src="scripts/services/dataServe.js"></script>
+    <!-- directives -->
+    <script src="scripts/directives/posts.js"></script>
+    <!-- custom scripts -->
     <script src="scripts/main.js"></script>
 
     <!-- endbuild -->
