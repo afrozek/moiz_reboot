@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Moiz Rebooted</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+<!--     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />-->    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Jura:400,500,600,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,900,100,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="lib/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+
+    
+  </head>
+  <body ng-app="app">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+<header class="main_header container_full_width"ng-include="'templates/header.html'"></header>  
+
+<div id="template_inject" ui-view >
+    <!-- template inject -->
+</div>
+<footer ng-include="'templates/footer.html'"></footer>
+
+    
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="lib/modernizr/modernizr.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    
+    <!-- build:js(.) scripts/plugins.js -->
+    
+    <!-- endbuild -->
+    
+
+    <!-- build:js scripts/main.js -->
+    
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/homeCtrl.js"></script>
+    <script src="scripts/controllers/aboutCtrl.js"></script>
+    <script src="scripts/controllers/contactCtrl.js"></script>
+    <script src="scripts/controllers/articlesCtrl.js"></script>
+    <script src="scripts/services/dataServe.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>
