@@ -44,13 +44,15 @@ angular.module('app')
 	//physical therapy
 		.controller('ptCtrl',['$scope','articleCategoryServe',function($scope,articleCategoryServe){
 				$scope.category = "physical therapy";
-				$scope.bgUrl = ""
+				$scope.bgUrl = "images/moiz_pt_gym_wide.png"
 				$scope.intro = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud";
 
 
-				$scope.articleContent = articleCategoryServe.get($scope.category).then(function(data){
+				$scope.latestArticles = articleCategoryServe.get($scope.category).then(function(data){
 					$scope.latestArticles = data;
 				}); 
+
+				
 
 			}])
 
@@ -58,7 +60,7 @@ angular.module('app')
 		.controller('nutritionCtrl',['$scope','articleCategoryServe',function($scope,articleCategoryServe){
 				$scope.category = "nutrition";
 
-				$scope.articleContent = articleCategoryServe.get($scope.category).then(function(data){
+				$scope.latestArticles = articleCategoryServe.get($scope.category).then(function(data){
 					$scope.latestArticles = data;
 				}); 
 
@@ -68,7 +70,7 @@ angular.module('app')
 		.controller('motivationCtrl',['$scope','articleCategoryServe',function($scope,articleCategoryServe){
 				$scope.category = "motivation";
 
-				$scope.articleContent = articleCategoryServe.get($scope.category).then(function(data){
+				$scope.latestArticles = articleCategoryServe.get($scope.category).then(function(data){
 					$scope.latestArticles = data;
 				}); 
 

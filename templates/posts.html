@@ -1,5 +1,5 @@
 
-<div class="post_box" ng-repeat="article in latestArticles">
+<div class="post_box" ng-repeat="article in latestArticles" ng-hide="$first">
 	<div class="post_image col-sm-4 " style="background:url('{{article.post_image}}');background-size:cover"></div>
 	<div class="post_info col-sm-8">
 		<h3 class='post_title'>{{article.post_title}}</h3>
