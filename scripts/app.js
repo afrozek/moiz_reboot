@@ -10,16 +10,16 @@ angular.module('app',['ui.router','app.directives.posts'])
 			controller:'homeCtrl'
 		})//end state
 
-		.state('about',{
-			url:'/about',
-			templateUrl:'templates/about.html',
-			controller:'aboutCtrl'
-		})//end state
-
 		.state('articles',{
 			url:'/articles/:postNum',
 			template:'{{articleContent}}}',
 			controller:'articlesCtrl'
+		})//end state
+
+		.state('about',{
+			url:'/about',
+			templateUrl:'templates/about.html',
+			controller:'aboutCtrl'
 		})//end state
 
 		.state('contact',{
@@ -27,4 +27,41 @@ angular.module('app',['ui.router','app.directives.posts'])
 			templateUrl:'templates/contact.html',
 			controller:'contactCtrl'
 		})//end state
+
+		//CONTENT PAGES
+
+		.state('physical-therapy',{
+			url:'/physical-therapy',
+			templateUrl:'templates/content_pages.html',
+			controller:'ptCtrl'
+		})//end state
+
+		.state('nutrition',{
+			url:'/nutrition',
+			templateUrl:'templates/content_pages.html',
+			controller:'nutritionCtrl'
+		})//end state
+
+		.state('motivation',{
+			url:'/motivation',
+			templateUrl:'templates/content_pages.html',
+			controller:'motivationCtrl'
+		})//end state
+
+		.state('mo-knows',{
+			url:'/mo-knows',
+			templateUrl:'templates/content_pages.html',
+			controller:'moKnowsCtrl'
+		})//end state
+
+		.state('blog',{
+			url:'/blog',
+			templateUrl:'templates/content_pages.html',
+			controller:'blog'
+		})//end state
+
 	}])//end config 
+
+
+
+
