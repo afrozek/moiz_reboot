@@ -59,7 +59,7 @@ angular.module('app')
 	//nutrition
 		.controller('nutritionCtrl',['$scope','articleCategoryServe',function($scope,articleCategoryServe){
 				$scope.category = "nutrition";
-				$scope.bgUrl = "images/motivaiton.png"
+				$scope.bgUrl = "images/nutrition.png"
 				$scope.intro = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud";
 
 				$scope.latestArticles = articleCategoryServe.get($scope.category).then(function(data){
