@@ -15,13 +15,29 @@
 
 <div id="latest_articles" class="container_full_width center" >
 	<div class="container no_padding center">
-		<div class="col-sm-6 ">
-			<h1 class="section_title">Latest</h1>
-			<div data-posts></div data-posts>
+		
+		<div id="featured" class="col-sm-12 no_padding">
+			<img class="img-responsive col-sm-6 no_padding" src="{{latestArticles[0].post_image}}">
+			<div class="col-sm-6 no_padding">
+				<h1 class="no_margin">Featured Article</h1>
+				<h2>{{latestArticles[0].post_title}}</h2>
+				<h3>{{latestArticles[0].post_date}}</h3>
+				<p>{{latestArticles[0].post_description}}</p>
+				<a ui-sref="articles({postNum:{{latestArticles[0].post_num}}})" href="#/articles/{{latestArticles[0].post_num}}">read full article ></a>
+
+			</div>
 		</div>
-		<div class="col-sm-6 pull-left ">
-			<h1 class="section_title">Latest</h1>
-			<div data-posts></div data-posts>
+
+		<div class="col-sm-6 no_left_padding">
+			<h1 class="section_title">Recent Articles</h1>
+			<div data-posts>
+				<!-- directive -->
+			</div data-posts>
+		</div>
+		<div id="videos" class="col-sm-6 pull-left no_right_padding">
+			<h1 class="section_title">Videos</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/j43AOQELZZQ" frameborder="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrGy0MaLoDI" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 </div>

@@ -33,7 +33,7 @@
     <![endif]-->
 
 
-<header class="main_header container_full_width"ng-include="'templates/header.html'"></header>  
+<header id="main_header" class="container_full_width" ng-include="'templates/header.html'"></header>  
 
 <div id="template_inject" ui-view >
     <!-- template inject -->
@@ -76,5 +76,8 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+
+    <!-- ReEmbed Video Player -->
+
   </body>
 </html>

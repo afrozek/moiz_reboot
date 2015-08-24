@@ -89,34 +89,58 @@ h1,h2,h3,h4{
 
 
 /*homepage*/
-.main_header{
-  margin:0;
-  padding:0;
-  
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  height: 130px;
+
+#main_header{
+  background: black;
+  border-bottom: 5px solid #B9181A;
 }
 
-.main_header h1{
-  margin:0;
-  color: white;
-  /* text-align: center; */
+nav#main_nav{
+  
 }
+
+nav#main_nav ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+nav#main_nav ul li{
+  display: inline-block;
+}
+
+nav#main_nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: jura,helvetica,arial,;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px;
+  transition: .4s;
+}
+
+nav#main_nav ul li a:hover{
+  color: red;
+}
+
 
 a.logo{
-  width: 70px;
-  height: auto;
-  padding: 10px;
-  display: block
-;
-  padding-top: 26px;
+  /* width: 70px; */
+  /* height: auto; */
+  /* padding: 10px; */
+  /* display: block
+; */
+  /* padding-top: 26px; */
+  display: inline-block;
+  /* position: absolute; */
+  background: black;
+  /* padding: 12px; */
+  /* border-bottom: 1px solid white; */
 }
 
 a.logo img{
-  width: 70px;
+  width: 50px;
   height: auto;
+  display: inline-block;
 }
 
 .title{
@@ -157,7 +181,7 @@ a.logo img{
   float: left;
   box-sizing:border-box;
   font-family: jura,helvetica,arial,"sans-serif";
-  border: 1px solid #2B2B2B;
+  /* border: 1px solid #2B2B2B; */
 
      -moz-filter:grayscale(30%);
   -webkit-filter:grayscale(30%);
@@ -166,17 +190,14 @@ a.logo img{
   -moz-box-shadow:    inset 0 0 50px #000000;
   -webkit-box-shadow: inset 0 0 50px #000000;
   box-shadow:         inset 0 0 50px #000000;
-    transition:.3s;
+  transition:.3s;
 }
 
-.tile:hover{
-  
-  border: 1px solid red;
-
+.tile:hover{ 
+  transition:.3s;
   -webkit-box-shadow:0px 0px 36px 0px #F71107;
      -moz-box-shadow:0px 0px 36px 0px #F71107;
           box-shadow:0px 0px 36px 0px #F71107;
- 
 
 }
 
@@ -259,7 +280,7 @@ a.logo img{
 /*====================POST BOX====================*/
 
 #latest_articles{
-    margin-top: 100px;
+    margin-top: 30px;
   
 }
 
@@ -272,7 +293,7 @@ a.logo img{
 }
 
 .content_page_intro{
-  margin-top: 50px;
+  margin-top: 100px;
   color: white;
   background: black;
   background: rgba(0,0,0,.8);
@@ -291,6 +312,7 @@ a.logo img{
   /* background: rgba(0,0,0,.5); */
   font-family: jura,helvetica,arial,'sans-serif';
 
+  margin-bottom: 15px;
 }
 
 #featured h1{
@@ -491,6 +513,9 @@ a.logo img{
   z-index: 98;
 }
 
+#videos iframe{
+  
+}
 
 
 /*====================MOBILE====================*/
