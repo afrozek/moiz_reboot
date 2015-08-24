@@ -52,23 +52,29 @@ angular.module('app')
 					$scope.latestArticles = data;
 				}); 
 
-				
+
 
 			}])
 
 	//nutrition
 		.controller('nutritionCtrl',['$scope','articleCategoryServe',function($scope,articleCategoryServe){
 				$scope.category = "nutrition";
+				$scope.bgUrl = "images/motivaiton.png"
+				$scope.intro = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud";
 
 				$scope.latestArticles = articleCategoryServe.get($scope.category).then(function(data){
 					$scope.latestArticles = data;
 				}); 
+
+
 
 			}])
 
 	//motivation
 		.controller('motivationCtrl',['$scope','articleCategoryServe',function($scope,articleCategoryServe){
 				$scope.category = "motivation";
+				$scope.bgUrl = "images/motivation_landing.png"
+				$scope.intro = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud";
 
 				$scope.latestArticles = articleCategoryServe.get($scope.category).then(function(data){
 					$scope.latestArticles = data;
