@@ -1,4 +1,4 @@
-angular.module('app',['ui.router',])
+angular.module('app',['ui.router','app.directives.posts'])
 	.config(['$urlRouterProvider','$stateProvider',function($urlRouterProvider,$stateProvider){
 		//any route not provided routes to otherwise below
 		$urlRouterProvider.otherwise('/');
@@ -17,8 +17,8 @@ angular.module('app',['ui.router',])
 		})//end state
 
 		.state('articles',{
-			url:'/articles',
-			templateUrl:'templates/articles.html',
+			url:'/articles/:postNum',
+			template:'{{articleContent}}}',
 			controller:'articlesCtrl'
 		})//end state
 

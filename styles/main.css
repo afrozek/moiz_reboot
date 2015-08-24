@@ -60,11 +60,16 @@ h1,h2,h3,h4{
 }
 
 .container{
-  width: 85%;
-  max-width: 1200px;
+  max-width: 1200px !important;
 }
 
+.no_padding{
+  padding: 0;
+}
 
+.float_left{
+  float: left;
+}
 /*custom*/
 
 
@@ -237,14 +242,12 @@ a.logo img{
 }
 
 
+
+
 .section_title{
-  /* box-shadow: 0px 0px 13px 9px; */
-  margin: 0;
-  padding: 0;
+  height: 100px;
+  padding: 20px;
   margin-bottom: 15px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 60px;
   color: rgb(255, 255, 255);
   font-family: jura,helvetica,arial,sans-serif;
   font-weight: lighter;
@@ -263,6 +266,10 @@ a.logo img{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#131313',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
   box-shadow: 0px 32px 20px -30px #F70B00;
+      box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-sizing:border-box;
+    -o-box-sizing:border-box;
 }
 
 
@@ -270,24 +277,29 @@ a.logo img{
 
 
 .post_box{
-    /* overflow: auto; */
     -webkit-font-smoothing: antialiased;
     margin: 0;
-    width: 518px;
-    /* height: 130px; */
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
     float: left;
     position: relative;
     background: rgb(255, 255, 255);
-    padding: 15px;
+    background-position: center;
     font-family: helvetica;
     overflow: hidden;
     transition:.3s;
-    border: none;
-    background-position: center;
-    margin: 10px;
-    margin-left: 20px;
     box-shadow: 0px 32px 20px -30px #F71107;
-    background: #191818;
+    border: 1px solid #2B2B2B;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-sizing:border-box;
+    -o-box-sizing:border-box;
+
+
+
+  
+  background: #191818;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a0a0a+0,353535+46,131313+100 */
   background: #0a0a0a; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -299,40 +311,13 @@ a.logo img{
   background: -ms-linear-gradient(-45deg,  #0a0a0a 0%,#353535 46%,#131313 100%); /* IE10+ */
   background: linear-gradient(135deg,  #0a0a0a 0%,#353535 46%,#131313 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#131313',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-
-
-    /* overflow: auto; */
-    /* clear: both; */
-    border: 1px solid #2B2B2B;
 }
 
-.post_box .post_icon{
-  width: 30px;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  background: white;
-  padding: 5px;
-  display: none;
-}
 
-.post_box .post_image{
-  /* height: auto; */
-    
-  width: 210px;
-    
-  height: 188px;
-    
-  /* margin-left: 7px; */
-    
-  /* margin-top: 7px; */
-    
+
+.post_box .post_image{    
   height: 130px;
-    float: left;
-    position: relative;
-  /* padding: 15px; */
   box-shadow: inset 0px 0px 36px 6px black;
-  /* border: 10px solid black; */
 }
 
 
@@ -340,22 +325,15 @@ a.logo img{
 .post_box .post_info{
   color: white;
   -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 96;
   font-weight: bolder;
   text-transform: uppercase;
   font-family: helvetica,arial,sans-serif;
   transition: .3s;
-  padding-bottom: 0px;
-  float: left;
-  margin-left: 15px;
   /* position: relative; */
-  width: 293px;
   height: 130px;
-  /* border-bottom: 1px solid white; */
-  /* padding: 15px; */
-  /* background: black; */
 }
 
 .post_box .info:hover{
@@ -364,23 +342,13 @@ a.logo img{
 
 .post_box .post_title{
     padding: 0;
-
     margin: 0;
-    /* background: #E4DDDD; */
     color: #ABABAB;
-    /* line-height: 19px; */
-    padding: 2px;
     box-shadow: inset 0px 5px 35px #000000;
     font-weight: lighter;
-    padding-left: 10px;
-    border-radius: 5px;
 }
 
 .post_box .post_category{
-    margin: 0;
-  
-    padding: 0;
-    padding: 2px;
     font-size: 12px;
     letter-spacing: 3px;
 }
@@ -388,37 +356,25 @@ a.logo img{
 
 
 .post_box .post_description{
-    padding: 0;
-  
-    margin: 0;
-    /* float: left; */
-    width: 245px;
     height: 80px;
     overflow: scroll;
     text-transform: none;
     font-family: helvetica;
     font-weight: 100;
     font-size: 12px;
-    padding: 2px;
 }
 
-#quote_of_day .date_written,.date_written{
-  margin:0;
-  padding: 0;
+.date_written{
   font-size: 12px;
-  /* font-style: italic; */
   font-weight: lighter;
   letter-spacing: 5px;
   font-family: jura,helvetica,arial,;
   text-transform: uppercase;
   text-align: center;
   color: gray;
-  border-top: 1px solid #2F2F2F;
-  margin-top: 15px;
-  padding-top: 10px;
-  /* position: relative; */
-  width: 100%;     border-top: 2px solid #151515;
-  float: left;
+  /* border-top: 1px solid #2F2F2F; */
+  /* width: 100%; */     
+  /* border-top: 2px solid #151515; */
 }
 
 .post_box .post_box_link{
@@ -429,53 +385,12 @@ a.logo img{
   transition:.3s;
   top: 0px;
   left: 0px;
+  z-index: 98;
 }
 
 /*====================MOBILE====================*/
 
 @media(max-width: 768px){
-  post_box{
-    padding: 0px;
-    padding-top: 10px;
-    /* padding-right: 10px; */
-    margin: 10px 0px 10px 0px;
-    box-sizing: border-box;
-    width: inherit;
-}
-
-.post_box .post_image{
-    margin: 0;
-  
-    padding: 0;
-    position: static;
-    display: block;
-    width: inherit;
-    float: none;
-}
-
-.post_box .post_info{
-  width:inherit;
-  padding:0;
-  margin:0;
-  height: auto;
-  float: none;
-  display: block;
-}
-
-.post_box .post_title,.post_box .post_category{
-  text-align: center;
-  width: inherit;
-  padding: 0;
-  margin: 0;
-  float: none;
-  padding: 5px;
-}
-
-.post_box .date_written{
-  padding-bottom:5px;
-}
-
-
 }
 
 

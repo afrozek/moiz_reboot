@@ -1,0 +1,11 @@
+
+<div class="post_box" ng-repeat="article in latestArticles">
+	<div class="post_image col-sm-4 " style="background:url('{{article.post_image}}');background-size:cover"></div>
+	<div class="post_info col-sm-8">
+		<h3 class='post_title'>{{article.post_title}}</h3>
+		<p class="post_category">{{article.post_category}}</p>
+		<p class="post_description">{{article.post_description}}</p>
+	</div>
+	<p class="date_written col-xs-12">{{article.post_date}}</p>
+	<a class='post_box_link' onmouseover="postHover(this)" onmouseout="notPostHover(this)"  ui-sref="articles({ postNum: {{article.post_num}} })"></a>
+</div>
