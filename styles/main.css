@@ -65,6 +65,7 @@ h1,h2,h3,h4{
 
 .container{
   max-width: 1200px !important;
+
 }
 
 .no_padding{
@@ -591,6 +592,10 @@ a.logo img{
 
 @media only screen and (max-width: 768px){
 /*nav*/
+.container{
+  width: 100%;
+  padding: 0;
+}
 
 #main_header{
   position: static;
@@ -627,10 +632,40 @@ a.logo{
   margin: 0;
 }
 
-div[class^="col-"],.post_info {
+div[class^="col-"],.post_info,.post_box {
     padding-left: 0; 
     padding-right: 0;
+    width: 100%;
 }
+
+#featured img{
+  width: 100%;
+}
+
+#featured a{
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*content pages*/
+
+.content_landing_header{
+  background: #300505 !important;
+  min-height: auto;
+  margin: 0;
+}
+
+.content_page_intro{
+  margin: 0;
+}
+
+/*article page*/
+#article_section{
+  padding: 0;
+}
+
 
 }/*end query*/
 
