@@ -1,20 +1,26 @@
-<div id="mason" class="container_full_width center">
+<div class="container_full_width center">
 	<div class="container center">
-		<div class="tile about_tile"><a ui-sref="about"></a><h1>about</h1></div>
-		<div class="tile pt_tile"><a ui-sref="physical_therapy"></a><h3>physical therapy</h3></div>
-		<div class="tile nutrition_tile"><a ui-sref="nutrition"></a><h3>nutrition</h3></div>
-		<div class="tile blog_tile"><a ui-sref="blog"></a><h3>blog</h3></div>
-		<div class="tile motivation_tile"><a ui-sref="motivation"></a><h2>motivation</h2></div>
-		<div class="tile moknows_tile"><a ui-sref="moknows"></a><h2>mo knows</h2></div>
+		<div id="article_section" class="col-sm-8">
+			<article>
+				<h1>{{articleContent[0].post_title}}</h1>
+				<h2>{{articleContent[0].post_category}}</h2>
+				<h3>{{articleContent[0].post_date}}</h3>
+				<img class="center" src="{{articleContent[0].post_image}}">
+				<p>{{articleContent[0].post_content}}</p>
+			</article>
+		</div>
+		<div id="sidebar" class="col-sm-4">
+			<aside>
+				<ul>
+					<li>one</li>
+					<li>one</li>
+					<li>one</li>
+				</ul>
+			</aside>
+		</div>
 	</div>
 </div>
 
-<div>
-<li ng-repeat="article in latestArticles">
-<h1>{{article.post_title}}</h1>
-<p>{{article.post_content}}</p>
-</li>
-</div>
 
 
 

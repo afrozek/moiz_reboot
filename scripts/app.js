@@ -12,21 +12,21 @@ angular.module('app',['ui.router','app.directives.posts'])
 
 		.state('articles',{
 			url:'/articles/:postNum',
-			template:'{{articleContent}}}',
+			templateUrl:'templates/articles.html',
 			controller:'articlesCtrl'
 		})//end state
 
-		.state('about',{
-			url:'/about',
-			templateUrl:'templates/about.html',
-			controller:'aboutCtrl'
-		})//end state
+		// .state('about',{
+		// 	url:'/about',
+		// 	templateUrl:'templates/about.html',
+		// 	controller:'aboutCtrl'
+		// })//end state
 
-		.state('contact',{
-			url:'/contact',
-			templateUrl:'templates/contact.html',
-			controller:'contactCtrl'
-		})//end state
+		// .state('contact',{
+		// 	url:'/contact',
+		// 	templateUrl:'templates/contact.html',
+		// 	controller:'contactCtrl'
+		// })//end state
 
 		//CONTENT PAGES
 
@@ -48,17 +48,17 @@ angular.module('app',['ui.router','app.directives.posts'])
 			controller:'motivationCtrl'
 		})//end state
 
-		.state('mo-knows',{
-			url:'/mo-knows',
-			templateUrl:'templates/content_pages.html',
-			controller:'moKnowsCtrl'
-		})//end state
+		// .state('mo-knows',{
+		// 	url:'/mo-knows',
+		// 	templateUrl:'templates/content_pages.html',
+		// 	controller:'moKnowsCtrl'
+		// })//end state
 
-		.state('blog',{
-			url:'/blog',
-			templateUrl:'templates/content_pages.html',
-			controller:'blog'
-		})//end state
+		// .state('blog',{
+		// 	url:'/blog',
+		// 	templateUrl:'templates/content_pages.html',
+		// 	controller:'blog'
+		// })//end state
 
 	}])//end config 
 
