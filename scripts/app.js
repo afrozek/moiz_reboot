@@ -2,7 +2,7 @@ angular.module('app',['ui.router','app.directives.posts'])
 	.config(['$urlRouterProvider','$stateProvider',function($urlRouterProvider,$stateProvider){
 		//any route not provided routes to otherwise below
 		$urlRouterProvider.otherwise('/');
-
+		
 		$stateProvider
 		.state('home',{
 			url:'/',

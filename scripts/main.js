@@ -16,6 +16,8 @@ function notPostHover(x){
 
 var dog ="dog";
 
+// hamburger
+
 $(document).ready(function(){
 console.log('\'Allo \'Allo!');
 

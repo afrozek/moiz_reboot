@@ -101,13 +101,41 @@ h1,h2,h3,h4{
   z-index: 99;
 }
 
+a.logo{
+  display: inline-block;
+  background: black;
+  float: left;
+  margin: 12px;
+}
+
+a.logo img{
+  width: 50px;
+  height: auto;
+  display: inline-block;
+}
+
+
 nav#main_nav{
   
+}
+
+a#hamburger{
+  right: 0;
+  display: inline-block;
+  color: white;
+  font-size: 36px;
+  padding: 5px;
+  right: 5px;
+  position: absolute;
+  display: none;
 }
 
 nav#main_nav ul{
   list-style: none;
   padding-left: 0;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 nav#main_nav ul li{
@@ -128,26 +156,6 @@ nav#main_nav ul li a:hover{
   color: red;
 }
 
-
-a.logo{
-  /* width: 70px; */
-  /* height: auto; */
-  /* padding: 10px; */
-  /* display: block
-; */
-  /* padding-top: 26px; */
-  display: inline-block;
-  /* position: absolute; */
-  background: black;
-  /* padding: 12px; */
-  /* border-bottom: 1px solid white; */
-}
-
-a.logo img{
-  width: 50px;
-  height: auto;
-  display: inline-block;
-}
 
 .title{
     text-align: center;
@@ -187,7 +195,7 @@ a.logo img{
 #template_inject{
     position: relative;
 
-    padding-top: 68px;
+    padding-top: 66px;
 }
 
 .tile{
@@ -590,8 +598,22 @@ a.logo img{
 
 /*====================MOBILE====================*/
 
+
+
 @media only screen and (max-width: 768px){
 /*nav*/
+
+
+
+a#hamburger {
+  display: inline-block;
+
+}
+
+a#hamburger:hover{
+  text-decoration: none;
+}
+
 .container{
   width: 100%;
   padding: 0;
@@ -599,6 +621,11 @@ a.logo img{
 
 #main_header{
   position: static;
+}
+
+nav#main_nav ul{
+  float: none;
+  display: none;
 }
 
 nav#main_nav ul li{
@@ -610,6 +637,7 @@ font-size: 32px;
 
 a.logo{
   display: block;
+  float: none;
   text-align: center;
 }
 
@@ -665,6 +693,16 @@ div[class^="col-"],.post_info,.post_box {
 #article_section{
   padding: 0;
 }
+
+#article_section article{
+  padding: 0;
+  border: 0;
+}
+
+#article_section article p{
+  padding: 15px;
+}
+
 
 
 }/*end query*/

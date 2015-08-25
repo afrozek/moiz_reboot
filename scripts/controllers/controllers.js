@@ -2,7 +2,16 @@
 
 angular.module('app')
 /*UNIQUE PAGES CONTROLLERS========================================================================*/
-	
+	// main controller
+	.controller('mainCtrl',['$scope',function($scope){
+		$scope.message = "test";
+
+		//toggle nav
+		$scope.navToggle = function(){
+			$('#main_nav ul').slideToggle();
+		}
+	}])
+
 	//homepage controller
 	.controller('homeCtrl',['$scope','everyArticleServe',function($scope,everyArticleServe){
 			$scope.data = everyArticleServe.get().then(function(data){
